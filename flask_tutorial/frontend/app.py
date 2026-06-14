@@ -29,7 +29,7 @@ def get_data():
 
     response = requests.get(BACKEND_URL + '/view')
 
-    return response.json()
+    return response.form()
 
 
 if __name__ == '__main__':
