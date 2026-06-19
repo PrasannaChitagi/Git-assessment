@@ -25,6 +25,11 @@ def submit():
 
     return 'Data Submitted'
 
+@app.route('/submittodoitem', methods=['POST'])
+def submit_todo():
+    itemName = request.json.get('itemName')
+    itemDescription = request.json.get('itemDescription')
+
 @app.route('/view')
 def view():
 
